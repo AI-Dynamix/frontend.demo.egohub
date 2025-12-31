@@ -49,48 +49,48 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 
-  /* KIOSK STANDARD GLASS SYSTEM (Refined for both modes) */
+  /* KIOSK STANDARD GLASS SYSTEM (Refined for higher transparency) */
   .k-glass {
-    @apply backdrop-blur-xl border-2 shadow-xl transition-all duration-300;
+    @apply backdrop-blur-md border-[1.5px] shadow-xl transition-all duration-300;
   }
 
   .k-glass-bar {
-    @apply backdrop-blur-3xl border-2 shadow-2xl transition-all duration-300;
+    @apply backdrop-blur-lg border-[1.5px] shadow-2xl transition-all duration-300;
   }
 
-  /* Dark Theme Overrides */
+  /* Dark Theme Overrides (More transparent) */
   .dark .k-glass {
-    background: rgba(0, 0, 0, 0.4);
-    border-color: rgba(255, 255, 255, 0.1);
-    @apply text-white shadow-black/40;
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.08);
+    @apply text-white shadow-black/30;
   }
 
   .dark .k-glass-bar {
-    background: rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.15);
-    @apply text-white shadow-black/50;
+    background: rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.12);
+    @apply text-white shadow-black/40;
   }
 
-  /* Light Theme Overrides */
+  /* Light Theme Overrides (More transparent) */
   .light .k-glass {
-    background: rgba(255, 255, 255, 0.35);
-    border-color: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(0, 0, 0, 0.05);
     @apply text-slate-800 shadow-xl;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
   }
 
   .light .k-glass-bar {
-    background: rgba(255, 255, 255, 0.45);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.3);
     @apply text-slate-900 shadow-2xl;
-    box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
   }
 
   .glass-dark {
-    @apply backdrop-blur-3xl border-2 shadow-2xl;
-    background: rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    @apply backdrop-blur-xl border-2 shadow-2xl;
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
 
   .text-glow {
