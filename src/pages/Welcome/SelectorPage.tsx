@@ -316,7 +316,7 @@ export default function SelectorPage({ onLanguageSelect }: SelectorPageProps) {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-center mb-10"
                     >
-                        <h3 className="text-3xl font-bold text-white/50 tracking-[0.2em] uppercase">
+                        <h3 className="text-3xl font-black text-current opacity-50 tracking-[0.2em] uppercase">
                             Please select the language
                         </h3>
                     </motion.div>
@@ -328,31 +328,24 @@ export default function SelectorPage({ onLanguageSelect }: SelectorPageProps) {
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: index * 0.1, duration: 0.5, ease: "easeOut" }}
-                                whileHover={{
-                                    scale: 1.02,
-                                    backgroundColor: "rgba(255,255,255,0.08)",
-                                    borderColor: "rgba(255,255,255,0.4)"
-                                }}
+                                whileHover={{ scale: 1.02, y: -5 }}
                                 whileTap={{ scale: 0.98 }}
                                 onClick={() => handleFlagClick(lang.code)}
-                                className="glass-dark flex flex-col items-center justify-center p-6 gap-6 rounded-[2.5rem] border-2 border-white/10 transition-all duration-300 shadow-2xl group relative overflow-hidden aspect-[2/3] w-full"
+                                className="k-glass flex flex-col items-center justify-center p-6 gap-6 rounded-[2.5rem] transition-all duration-300 shadow-2xl group relative overflow-hidden aspect-[2/3] w-full border-none"
                             >
                                 {/* Decorative Glow */}
-                                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-white/5 blur-3xl rounded-full" />
+                                <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                 <div className="relative z-10">
                                     <div className="flex items-center justify-center w-[120px] h-[120px]">
                                         <span
-                                            className={`fi fi-${lang.countryCode} text-[90px] rounded-xl shadow-xl transition-all duration-500 group-hover:scale-110`}
+                                            className={`fi fi-${lang.countryCode} text-[90px] rounded-xl shadow-xl transition-all duration-500 group-hover:scale-110 drop-shadow-2xl`}
                                             style={{ borderRadius: '0.75rem' }}
                                         />
                                     </div>
-                                    {/* Reflection Effect */}
-                                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-4 bg-white/10 blur-xl rounded-full opacity-30" />
                                 </div>
 
-                                <span className="text-2xl font-bold text-white relative z-10 group-hover:text-glow transition-all tracking-wide text-center">
+                                <span className="text-2xl font-black text-current relative z-10 group-hover:text-glow transition-all tracking-wide text-center uppercase">
                                     {lang.label}
                                 </span>
                             </motion.button>

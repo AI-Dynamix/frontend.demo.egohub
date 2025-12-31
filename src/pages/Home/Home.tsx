@@ -36,7 +36,7 @@ import HomeLayout from "../../layouts/HomeLayout"
 import demoPanorama from "../../assets/demo.png"
 
 // 3D Icons for Zone C (Bright version)
-import iconCompass from "../../assets/icons/bright/compass.png"
+import iconMapPin from "../../assets/icons/bright/map-pin.png"
 import iconCalendar from "../../assets/icons/bright/calendar.png"
 import iconChat from "../../assets/icons/bright/chat.png"
 import iconPhone from "../../assets/icons/bright/phone.png"
@@ -45,7 +45,7 @@ import iconShield from "../../assets/icons/bright/3dicons-shield-front-premium.p
 
 // Icon mapping for services
 const serviceIcons: Record<string, string> = {
-  transport: iconCompass,
+  transport: iconMapPin,
   events: iconCalendar,
   guide: iconChat,
   medical: iconPhone,
@@ -76,12 +76,12 @@ export default function Home() {
   ]
 
   const services = [
-    { id: 'transport', title: t('services.transport') },
-    { id: 'events', title: t('services.events') },
+    { id: 'transport', title: 'Transport' },
+    { id: 'events', title: 'Event' },
     { id: 'guide', title: t('services.guide') },
-    { id: 'medical', title: t('services.medical') },
-    { id: 'card', title: t('services.card') },
-    { id: 'security', title: t('services.security') },
+    { id: 'medical', title: 'Medical' },
+    { id: 'card', title: 'Local Visa/Master' },
+    { id: 'security', title: 'Call Police' },
   ]
 
   // Icon glow animation
@@ -114,42 +114,37 @@ export default function Home() {
     <HomeLayout>
       <Header onDiscoveryClick={handleDiscoveryClick} />
 
-      {/* Spacer to center Search */}
-      <div className="flex-1" />
+      {/* Spacer Above Search (2/64 = 2 units) */}
+      <div className="h-[calc(2*var(--k-unit))] shrink-0" />
 
-      {/* ZONE D: Search (Centered between Header and Matrix) */}
-      <section className="px-12 h-[var(--h-search)] shrink-0 z-20">
+      {/* ZONE D: Search (Shrunk ~20%, approx 3.2 units) */}
+      <section className="px-12 h-[calc(3.2*var(--k-unit))] shrink-0 z-20">
         <motion.div
           onClick={() => navigate('/search')}
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="w-full h-full glass-bar rounded-full flex items-center px-10 gap-6 shadow-2xl cursor-pointer hover:bg-white/10 transition-all duration-300 group"
+          className="w-full h-full k-glass-bar rounded-full flex items-center px-10 gap-6 cursor-pointer hover:brightness-105"
         >
           {/* Icons Group */}
           <div className="flex items-center gap-4 shrink-0">
             <div className="relative">
-              <MagnifyingGlass size={36} className="text-white/70 group-hover:text-white transition-colors" />
-              <div className="absolute -inset-2 bg-blue-400/10 blur-xl rounded-full group-hover:animate-pulse" />
+              <MagnifyingGlass size={30} className="text-current opacity-70" />
+              <div className="absolute -inset-2 bg-blue-500/10 blur-xl rounded-full" />
             </div>
 
             {/* Premium Microphone Animation */}
             <div className="relative flex items-center justify-center">
               <motion.div
-                animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.4, 0.2] }}
+                animate={{ scale: [1, 1.3, 1], opacity: [0.1, 0.2, 0.1] }}
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                className="absolute inset-0 bg-red-500/40 rounded-full blur-lg"
+                className="absolute inset-0 bg-red-500/30 rounded-full blur-lg"
               />
-              <motion.div
-                animate={{ scale: [1, 1.15, 1] }}
-                transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 0.2 }}
-                className="absolute inset-0 bg-white/10 rounded-full"
-              />
-              <Microphone size={32} className="text-white relative z-10 drop-shadow-[0_0_12px_rgba(239,68,68,0.6)]" weight="fill" />
+              <Microphone size={26} className="text-red-500 relative z-10 drop-shadow-[0_0_8px_rgba(239,68,68,0.4)]" weight="fill" />
             </div>
           </div>
 
           <div className="flex-1">
-            <span className="text-3xl font-medium text-white/90 tracking-tight">
+            <span className="text-2xl font-bold tracking-tight opacity-90">
               Search or say what you want
             </span>
           </div>
@@ -158,32 +153,21 @@ export default function Home() {
             {mapPOI.map((poi, idx) => (
               <motion.button
                 key={idx}
-                whileHover={{ scale: 1.15, backgroundColor: "rgba(255,255,255,0.2)" }}
+                whileHover={{ scale: 1.15 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-4 bg-white/10 rounded-full transition-all group/icon"
+                className="p-3 bg-black/5 dark:bg-white/10 rounded-full transition-all"
                 title={poi.label}
                 onClick={(e) => e.stopPropagation()}
               >
-                <poi.icon className="w-8 h-8 text-white/70 group-hover/icon:text-white group-hover/icon:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]" weight="fill" />
+                <poi.icon className="w-6 h-6 text-current opacity-80" weight="fill" />
               </motion.button>
             ))}
           </div>
         </motion.div>
       </section>
 
-      {/* Spacer to center Search */}
-      <div className="flex-1" />
-
-      <svg width="0" height="0" className="absolute">
-        <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#f97316" />
-          <stop offset="15%" stopColor="#facc15" />
-          <stop offset="60%" stopColor="#facc15" />
-          <stop offset="100%" stopColor="#059669" />
-        </linearGradient>
-      </svg>
-
-      <div className="h-[var(--gap-outer)] shrink-0" />
+      {/* Spacer Between Search and Matrix (2/64 = 2 units) */}
+      <div className="h-[calc(2*var(--k-unit))] shrink-0" />
 
       {/* ZONE C: Matrix (720px / 24 units) */}
       <section className="px-12 h-[var(--h-matrix)] shrink-0 z-10">
@@ -205,13 +189,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05, duration: 0.5 }}
-                whileHover={{ scale: 1.02, backgroundColor: "rgba(255,255,255,0.1)" }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`glass flex flex-col items-center justify-center gap-6 group cursor-pointer transition-all duration-300 h-full ${cornerClass}`}
+                className={`k-glass flex flex-col items-center justify-start py-8 gap-8 group cursor-pointer h-full ${cornerClass}`}
               >
-                {/* Icon Wrapper */}
+                {/* Icon Wrapper (Uniform circles, aligned top) */}
                 <motion.div
-                  className="p-8 rounded-full bg-white/5 transition-all relative"
+                  className="w-[180px] h-[180px] rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center transition-all relative shrink-0"
                   style={{
                     boxShadow: index === activeIconIndex && isGlowing
                       ? '0 0 40px rgba(250, 204, 21, 0.4), 0 0 80px rgba(250, 204, 21, 0.2)'
@@ -233,8 +217,9 @@ export default function Home() {
                   />
                 </motion.div>
 
-                <div className="px-6">
-                  <span className="text-4xl font-bold text-white text-center leading-tight tracking-wide group-hover:text-glow transition-all">
+                {/* Text area (Centered horizontally, aligned top vertically) */}
+                <div className="px-6 flex-1 flex flex-col items-center justify-start">
+                  <span className="text-4xl font-black text-center leading-tight tracking-wide group-hover:text-glow transition-all">
                     {item.title}
                   </span>
                 </div>
@@ -246,15 +231,17 @@ export default function Home() {
 
       <div className="h-[var(--gap-outer)] shrink-0" />
 
-      {/* ZONE B (Moved to Bottom) */}
-      {showGreeting ? (
-        <ZoneBGreeting
-          langCode={location.state?.lang || currentLang}
-          onComplete={handleGreetingComplete}
-        />
-      ) : (
-        <LandmarkCarousel />
-      )}
+      {/* ZONE B (Landmark Carousel) */}
+      <section className="h-[var(--h-upper)] shrink-0">
+        {showGreeting ? (
+          <ZoneBGreeting
+            langCode={location.state?.lang || currentLang}
+            onComplete={handleGreetingComplete}
+          />
+        ) : (
+          <LandmarkCarousel />
+        )}
+      </section>
 
       <div className="h-[var(--gap-outer)] shrink-0" />
       <Footer />

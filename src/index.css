@@ -49,6 +49,43 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 
+  /* KIOSK STANDARD GLASS SYSTEM (Refined for both modes) */
+  .k-glass {
+    @apply backdrop-blur-xl border-2 shadow-xl transition-all duration-300;
+  }
+
+  .k-glass-bar {
+    @apply backdrop-blur-3xl border-2 shadow-2xl transition-all duration-300;
+  }
+
+  /* Dark Theme Overrides */
+  .dark .k-glass {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.1);
+    @apply text-white shadow-black/40;
+  }
+
+  .dark .k-glass-bar {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.15);
+    @apply text-white shadow-black/50;
+  }
+
+  /* Light Theme Overrides */
+  .light .k-glass {
+    background: rgba(255, 255, 255, 0.35);
+    border-color: rgba(0, 0, 0, 0.08);
+    @apply text-slate-800 shadow-xl;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .light .k-glass-bar {
+    background: rgba(255, 255, 255, 0.45);
+    border-color: rgba(255, 255, 255, 0.4);
+    @apply text-slate-900 shadow-2xl;
+    box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.15);
+  }
+
   .glass-dark {
     @apply backdrop-blur-3xl border-2 shadow-2xl;
     background: rgba(0, 0, 0, 0.3);
@@ -58,6 +95,10 @@
 
   .text-glow {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .light .text-glow {
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
 
   .bento-card-safe-zone {

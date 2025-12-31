@@ -42,11 +42,11 @@ export default function HomeLayout({
     // Theme-based styling
     const isLight = theme === 'light'
     const overlayClass = backgroundOverlay || (isLight
-        ? "bg-gradient-to-b from-white/20 via-white/10 to-white/30"
+        ? "bg-gradient-to-b from-white/10 via-white/5 to-white/20"
         : "bg-gradient-to-b from-black/35 via-black/20 to-black/50")
 
     return (
-        <div className={`h-full relative flex flex-col ${isLight ? 'text-slate-800' : 'text-white'}`}>
+        <div className={`h-full relative flex flex-col ${isLight ? 'light' : 'dark'}`}>
             {/* Background Layer */}
             <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className={`absolute inset-0 z-10 ${overlayClass}`} />
@@ -59,13 +59,13 @@ export default function HomeLayout({
                         animate={{ opacity: isLight ? 1 : 0.85 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 1.5 }}
-                        className={`w-full h-full object-cover absolute inset-0 ${isLight ? 'brightness-125 saturate-110' : ''}`}
+                        className={`w-full h-full object-cover absolute inset-0 ${isLight ? 'brightness-110 saturate-105' : ''}`}
                     />
                 </AnimatePresence>
             </div>
 
-            {/* Content Layer */}
-            <div className="relative z-10 h-full flex flex-col">
+            {/* Content Layer (Automatically responds to .light/.dark) */}
+            <div className="relative z-10 h-full flex flex-col transition-colors duration-500">
                 {children}
             </div>
         </div>
