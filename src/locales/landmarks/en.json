@@ -1,0 +1,64 @@
+{
+    "landmarks": [
+        {
+            "id": "benthanh",
+            "name": "Ben Thanh Market",
+            "description": "Iconic bustling market in the heart of Saigon.",
+            "image": "benthanh.webp"
+        },
+        {
+            "id": "notredame",
+            "name": "Notre-Dame Cathedral",
+            "description": "Magnificent French colonial architecture landmark.",
+            "image": "notredame.webp"
+        },
+        {
+            "id": "independence",
+            "name": "Independence Palace",
+            "description": "Historic palace and witness to national history.",
+            "image": "independence.webp"
+        },
+        {
+            "id": "postoffice",
+            "name": "Central Post Office",
+            "description": "Beautiful French colonial building by Gustave Eiffel.",
+            "image": "postoffice.webp"
+        },
+        {
+            "id": "nguyenhue",
+            "name": "Nguyen Hue Walking Street",
+            "description": "Vibrant pedestrian plaza with fountains and events.",
+            "image": "nguyenhue.webp"
+        },
+        {
+            "id": "landmark81",
+            "name": "Landmark 81",
+            "description": "Vietnam's tallest building with 360-degree views.",
+            "image": "landmark81.webp"
+        },
+        {
+            "id": "bitexco",
+            "name": "Bitexco Financial Tower",
+            "description": "Modern icon featuring Saigon Skydeck observatory.",
+            "image": "bitexco.webp"
+        },
+        {
+            "id": "opera",
+            "name": "Saigon Opera House",
+            "description": "Stunning French-style opera house.",
+            "image": "opera.webp"
+        },
+        {
+            "id": "bachdang",
+            "name": "Bach Dang Wharf",
+            "description": "Historic pier along the Saigon River.",
+            "image": "bachdang.webp"
+        },
+        {
+            "id": "ngochoang",
+            "name": "Jade Emperor Pagoda",
+            "description": "Ancient and sacred Chinese temple.",
+            "image": "ngochoang.webp"
+        }
+    ]
+}

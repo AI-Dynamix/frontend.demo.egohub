@@ -1,0 +1,35 @@
+{
+    "common": {
+        "appName": "eGo",
+        "appDescription": "智能旅游助手"
+    },
+    "header": {
+        "weather": "天气",
+        "loading": "加载中..."
+    },
+    "footer": {
+        "accessibility": "无障碍",
+        "emergency": "紧急",
+        "more": "更多"
+    },
+    "search": {
+        "placeholder": "搜索地点、服务...",
+        "dining": "餐饮",
+        "hotels": "酒店",
+        "shopping": "购物",
+        "attractions": "景点"
+    },
+    "services": {
+        "transport": "交通出行",
+        "events": "附近活动",
+        "guide": "导游服务",
+        "medical": "医疗支持",
+        "card": "eSIM 和 eGo卡",
+        "security": "安保和 SOS"
+    },
+    "idle": {
+        "warning": "您还在使用吗？",
+        "autoReset": "{{seconds}}秒后自动结束",
+        "continueButton": "我还在使用"
+    }
+}

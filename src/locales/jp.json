@@ -1,0 +1,35 @@
+{
+    "common": {
+        "appName": "eGo",
+        "appDescription": "スマート旅行アシスタント"
+    },
+    "header": {
+        "weather": "天気",
+        "loading": "読み込み中..."
+    },
+    "footer": {
+        "accessibility": "アクセシビリティ",
+        "emergency": "緊急",
+        "more": "もっと"
+    },
+    "search": {
+        "placeholder": "場所、サービスを検索...",
+        "dining": "食事",
+        "hotels": "ホテル",
+        "shopping": "ショッピング",
+        "attractions": "観光スポット"
+    },
+    "services": {
+        "transport": "交通・移動",
+        "events": "近くのイベント",
+        "guide": "ツアーガイド",
+        "medical": "医療サポート",
+        "card": "eSIM と eGoカード",
+        "security": "セキュリティ と SOS"
+    },
+    "idle": {
+        "warning": "まだご利用中ですか？",
+        "autoReset": "{{seconds}}秒後に自動終了",
+        "continueButton": "まだ使っています"
+    }
+}

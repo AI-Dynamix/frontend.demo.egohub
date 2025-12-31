@@ -1,0 +1,64 @@
+{
+    "landmarks": [
+        {
+            "id": "benthanh",
+            "name": "Chợ Bến Thành",
+            "description": "Biểu tượng lịch sử sôi động giữa lòng Sài Gòn.",
+            "image": "benthanh.webp"
+        },
+        {
+            "id": "notredame",
+            "name": "Nhà Thờ Đức Bà",
+            "description": "Kiệt tác kiến trúc Pháp cổ kính và trang nghiêm.",
+            "image": "notredame.webp"
+        },
+        {
+            "id": "independence",
+            "name": "Dinh Độc Lập",
+            "description": "Di tích quốc gia đặc biệt, chứng nhân lịch sử.",
+            "image": "independence.webp"
+        },
+        {
+            "id": "postoffice",
+            "name": "Bưu Điện Thành Phố",
+            "description": "Kiến trúc Pháp đặc sắc của Gustave Eiffel.",
+            "image": "postoffice.webp"
+        },
+        {
+            "id": "nguyenhue",
+            "name": "Phố Đi Bộ Nguyễn Huệ",
+            "description": "Trung tâm sầm uất với quảng trường và đài phun nước.",
+            "image": "nguyenhue.webp"
+        },
+        {
+            "id": "landmark81",
+            "name": "Landmark 81",
+            "description": "Tòa nhà cao nhất Việt Nam với tầm nhìn 360 độ.",
+            "image": "landmark81.webp"
+        },
+        {
+            "id": "bitexco",
+            "name": "Bitexco Financial Tower",
+            "description": "Biểu tượng hiện đại với sàn quan sát Saigon Skydeck.",
+            "image": "bitexco.webp"
+        },
+        {
+            "id": "opera",
+            "name": "Nhà Hát Thành Phố",
+            "description": "Nhà hát opera phong cách Pháp tuyệt đẹp.",
+            "image": "opera.webp"
+        },
+        {
+            "id": "bachdang",
+            "name": "Bến Bạch Đằng",
+            "description": "Cầu tàu lịch sử bên bờ sông Sài Gòn.",
+            "image": "bachdang.webp"
+        },
+        {
+            "id": "ngochoang",
+            "name": "Chùa Ngọc Hoàng",
+            "description": "Ngôi chùa Trung Hoa cổ kính và linh thiêng.",
+            "image": "ngochoang.webp"
+        }
+    ]
+}

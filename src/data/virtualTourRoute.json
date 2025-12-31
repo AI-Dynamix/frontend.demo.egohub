@@ -1,0 +1,372 @@
+{
+    "route": {
+        "id": "nguyen-hue-to-benthanh",
+        "name": "Từ Nguyễn Huệ đến Chợ Bến Thành",
+        "description": "Khám phá trung tâm Sài Gòn",
+        "start": {
+            "name": "Kiosk Nguyễn Huệ",
+            "lat": 10.7744,
+            "lng": 106.7032
+        },
+        "end": {
+            "name": "Chợ Bến Thành",
+            "lat": 10.7725,
+            "lng": 106.6980
+        },
+        "totalDistance": 1500,
+        "estimatedWalkTime": 18,
+        "streets": [
+            {
+                "name": "Nguyễn Huệ",
+                "color": "#ef4444",
+                "startPercent": 0,
+                "endPercent": 25
+            },
+            {
+                "name": "Pasteur",
+                "color": "#f59e0b",
+                "startPercent": 25,
+                "endPercent": 45
+            },
+            {
+                "name": "Lê Lợi",
+                "color": "#3b82f6",
+                "startPercent": 45,
+                "endPercent": 75
+            },
+            {
+                "name": "Lê Lai",
+                "color": "#10b981",
+                "startPercent": 75,
+                "endPercent": 100
+            }
+        ]
+    },
+    "pois": [
+        {
+            "id": "poi-001",
+            "name": "Kiosk eGo Hub",
+            "type": "landmark",
+            "description": "Điểm xuất phát - Kiosk du lịch thông minh",
+            "lat": 10.7744,
+            "lng": 106.7032,
+            "positionPercent": 0,
+            "street": "Nguyễn Huệ",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nguyen_Hue_Walking_Street.jpg/640px-Nguyen_Hue_Walking_Street.jpg"
+            ],
+            "rating": null,
+            "priceRange": null,
+            "openHours": "24/7"
+        },
+        {
+            "id": "poi-002",
+            "name": "Starbucks Reserve",
+            "type": "cafe",
+            "description": "Cà phê cao cấp với không gian sang trọng",
+            "lat": 10.7746,
+            "lng": 106.7030,
+            "positionPercent": 5,
+            "street": "Nguyễn Huệ",
+            "images": [
+                "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600"
+            ],
+            "rating": 4.5,
+            "priceRange": "$$$",
+            "openHours": "07:00-22:00"
+        },
+        {
+            "id": "poi-003",
+            "name": "Bitexco Tower",
+            "type": "landmark",
+            "description": "Tòa nhà biểu tượng với Sky Deck tầng 49",
+            "lat": 10.7715,
+            "lng": 106.7043,
+            "positionPercent": 10,
+            "street": "Nguyễn Huệ",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Bitexco_Financial_Tower.jpg/400px-Bitexco_Financial_Tower.jpg"
+            ],
+            "rating": 4.5,
+            "priceRange": "$$",
+            "openHours": "09:30-21:30"
+        },
+        {
+            "id": "poi-004",
+            "name": "Phở 2000",
+            "type": "restaurant",
+            "description": "Phở nổi tiếng - Bill Clinton từng ghé",
+            "lat": 10.7752,
+            "lng": 106.7020,
+            "positionPercent": 15,
+            "street": "Nguyễn Huệ",
+            "images": [
+                "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=600"
+            ],
+            "rating": 4.2,
+            "priceRange": "$",
+            "openHours": "06:00-22:00"
+        },
+        {
+            "id": "poi-005",
+            "name": "Rex Hotel",
+            "type": "landmark",
+            "description": "Khách sạn 5 sao lịch sử từ 1927",
+            "lat": 10.7756,
+            "lng": 106.7011,
+            "positionPercent": 22,
+            "street": "Nguyễn Huệ",
+            "images": [
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/49841838.jpg"
+            ],
+            "rating": 4.6,
+            "priceRange": "$$$$",
+            "openHours": "24/7"
+        },
+        {
+            "id": "poi-006",
+            "name": "Cơm Tấm Bụi Sài Gòn",
+            "type": "restaurant",
+            "description": "Cơm tấm sườn bì chả đúng vị Sài Gòn",
+            "lat": 10.7758,
+            "lng": 106.7005,
+            "positionPercent": 28,
+            "street": "Pasteur",
+            "images": [
+                "https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?w=600"
+            ],
+            "rating": 4.4,
+            "priceRange": "$",
+            "openHours": "06:00-21:00"
+        },
+        {
+            "id": "poi-007",
+            "name": "Viện Bảo Tàng TP.HCM",
+            "type": "landmark",
+            "description": "Bảo tàng lịch sử trong tòa nhà thuộc địa",
+            "lat": 10.7760,
+            "lng": 106.6998,
+            "positionPercent": 33,
+            "street": "Pasteur",
+            "images": [
+                "https://images.unsplash.com/photo-1580130775562-0ef92da028de?w=600"
+            ],
+            "rating": 4.3,
+            "priceRange": "$",
+            "openHours": "08:00-17:00"
+        },
+        {
+            "id": "poi-008",
+            "name": "Highlands Coffee",
+            "type": "cafe",
+            "description": "Phin sữa đá đặc trưng Việt Nam",
+            "lat": 10.7755,
+            "lng": 106.6992,
+            "positionPercent": 38,
+            "street": "Pasteur",
+            "images": [
+                "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600"
+            ],
+            "rating": 4.1,
+            "priceRange": "$$",
+            "openHours": "07:00-22:30"
+        },
+        {
+            "id": "poi-009",
+            "name": "Nhà Thờ Đức Bà",
+            "type": "landmark",
+            "description": "Nhà thờ biểu tượng kiến trúc Pháp",
+            "lat": 10.7798,
+            "lng": 106.6990,
+            "positionPercent": 43,
+            "street": "Pasteur",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Notre_Dame_Cathedral%2C_Ho_Chi_Minh_City.jpg/640px-Notre_Dame_Cathedral%2C_Ho_Chi_Minh_City.jpg"
+            ],
+            "rating": 4.7,
+            "priceRange": null,
+            "openHours": "08:00-17:00"
+        },
+        {
+            "id": "poi-010",
+            "name": "Bún Chả Hà Nội",
+            "type": "restaurant",
+            "description": "Bún chả Hà Nội đích thực tại Sài Gòn",
+            "lat": 10.7748,
+            "lng": 106.6985,
+            "positionPercent": 50,
+            "street": "Lê Lợi",
+            "images": [
+                "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600"
+            ],
+            "rating": 4.3,
+            "priceRange": "$",
+            "openHours": "10:00-21:00"
+        },
+        {
+            "id": "poi-011",
+            "name": "Saigon Centre",
+            "type": "landmark",
+            "description": "TTTM Takashimaya cao cấp",
+            "lat": 10.7735,
+            "lng": 106.6995,
+            "positionPercent": 55,
+            "street": "Lê Lợi",
+            "images": [
+                "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"
+            ],
+            "rating": 4.5,
+            "priceRange": "$$$",
+            "openHours": "09:30-21:30"
+        },
+        {
+            "id": "poi-012",
+            "name": "Bánh Mì Hòa Mã",
+            "type": "restaurant",
+            "description": "Bánh mì huyền thoại từ 1958",
+            "lat": 10.7732,
+            "lng": 106.6990,
+            "positionPercent": 60,
+            "street": "Lê Lợi",
+            "images": [
+                "https://images.unsplash.com/photo-1600688640154-9619e002df30?w=600"
+            ],
+            "rating": 4.7,
+            "priceRange": "$",
+            "openHours": "06:00-18:00"
+        },
+        {
+            "id": "poi-013",
+            "name": "The Coffee House",
+            "type": "cafe",
+            "description": "Không gian làm việc và thưởng thức cà phê",
+            "lat": 10.7730,
+            "lng": 106.6982,
+            "positionPercent": 65,
+            "street": "Lê Lợi",
+            "images": [
+                "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600"
+            ],
+            "rating": 4.2,
+            "priceRange": "$$",
+            "openHours": "07:00-23:00"
+        },
+        {
+            "id": "poi-014",
+            "name": "Nhà Văn Hóa Thanh Niên",
+            "type": "landmark",
+            "description": "Trung tâm văn hóa kiến trúc Pháp",
+            "lat": 10.7728,
+            "lng": 106.6978,
+            "positionPercent": 70,
+            "street": "Lê Lợi",
+            "images": [
+                "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=600"
+            ],
+            "rating": 4.3,
+            "priceRange": null,
+            "openHours": "08:00-21:00"
+        },
+        {
+            "id": "poi-015",
+            "name": "Quán Ốc Đào",
+            "type": "restaurant",
+            "description": "Ốc hấp sả và đồ nhậu Sài Gòn",
+            "lat": 10.7726,
+            "lng": 106.6975,
+            "positionPercent": 78,
+            "street": "Lê Lai",
+            "images": [
+                "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600"
+            ],
+            "rating": 4.1,
+            "priceRange": "$$",
+            "openHours": "16:00-24:00"
+        },
+        {
+            "id": "poi-016",
+            "name": "Quảng Trường 23/9",
+            "type": "landmark",
+            "description": "Công viên trung tâm kế Metro",
+            "lat": 10.7724,
+            "lng": 106.6970,
+            "positionPercent": 85,
+            "street": "Lê Lai",
+            "images": [
+                "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=600"
+            ],
+            "rating": 4.2,
+            "priceRange": null,
+            "openHours": "24/7"
+        },
+        {
+            "id": "poi-017",
+            "name": "Phúc Long Coffee",
+            "type": "cafe",
+            "description": "Trà sữa và cà phê thương hiệu Việt",
+            "lat": 10.7723,
+            "lng": 106.6965,
+            "positionPercent": 92,
+            "street": "Lê Lai",
+            "images": [
+                "https://images.unsplash.com/photo-1558857563-c0c3ee5e9b60?w=600"
+            ],
+            "rating": 4.3,
+            "priceRange": "$$",
+            "openHours": "07:00-22:00"
+        },
+        {
+            "id": "poi-018",
+            "name": "Chợ Bến Thành",
+            "type": "landmark",
+            "description": "Biểu tượng Sài Gòn - Ẩm thực & Quà lưu niệm",
+            "lat": 10.7725,
+            "lng": 106.6980,
+            "positionPercent": 100,
+            "street": "Lê Lai",
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ben_Thanh_Market.jpg/640px-Ben_Thanh_Market.jpg"
+            ],
+            "rating": 4.4,
+            "priceRange": "$$",
+            "openHours": "06:00-18:00"
+        }
+    ],
+    "poiTypes": {
+        "landmark": {
+            "icon": "Landmark",
+            "color": "#3b82f6",
+            "label": "Landmark",
+            "labelVi": "Địa điểm",
+            "position": "bottom"
+        },
+        "cafe": {
+            "icon": "Coffee",
+            "color": "#f59e0b",
+            "label": "Café",
+            "labelVi": "Cà phê",
+            "position": "top"
+        },
+        "restaurant": {
+            "icon": "ForkKnife",
+            "color": "#ef4444",
+            "label": "Restaurant",
+            "labelVi": "Nhà hàng",
+            "position": "top"
+        },
+        "hotel": {
+            "icon": "BuildingOffice",
+            "color": "#8b5cf6",
+            "label": "Hotel",
+            "labelVi": "Khách sạn",
+            "position": "bottom"
+        },
+        "market": {
+            "icon": "Storefront",
+            "color": "#f97316",
+            "label": "Market",
+            "labelVi": "Chợ",
+            "position": "bottom"
+        }
+    }
+}

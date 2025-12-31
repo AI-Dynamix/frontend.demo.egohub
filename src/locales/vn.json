@@ -1,0 +1,40 @@
+{
+    "common": {
+        "appName": "eGo",
+        "appDescription": "Trợ lý du lịch thông minh",
+        "back": "Quay lại"
+    },
+    "support": {
+        "title": "Trợ lý du lịch AI",
+        "greeting": "Tôi có thể giúp gì cho bạn?"
+    },
+    "header": {
+        "weather": "Thời tiết",
+        "loading": "Đang tải..."
+    },
+    "footer": {
+        "accessibility": "Trợ năng",
+        "emergency": "Khẩn cấp",
+        "more": "Thêm"
+    },
+    "search": {
+        "placeholder": "Tìm kiếm địa điểm, dịch vụ...",
+        "dining": "Ăn uống",
+        "hotels": "Khách sạn",
+        "shopping": "Mua sắm",
+        "attractions": "Điểm tham quan"
+    },
+    "services": {
+        "transport": "Giao thông và Di chuyển",
+        "events": "Sự kiện quanh đây",
+        "guide": "Hướng dẫn viên",
+        "medical": "Hỗ trợ y tế",
+        "card": "eSIM và eGo Card",
+        "security": "An ninh và SOS"
+    },
+    "idle": {
+        "warning": "Bạn còn đang sử dụng không?",
+        "autoReset": "Tự động kết thúc sau {{seconds}}s",
+        "continueButton": "Tôi vẫn đang sử dụng"
+    }
+}

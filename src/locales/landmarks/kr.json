@@ -1,0 +1,64 @@
+{
+    "landmarks": [
+        {
+            "id": "benthanh",
+            "name": "벤탄 시장",
+            "description": "사이공 중심부의 활기찬 역사적 시장.",
+            "image": "benthanh.webp"
+        },
+        {
+            "id": "notredame",
+            "name": "노트르담 대성당",
+            "description": "장엄한 프랑스 식민지 시대 건축물.",
+            "image": "notredame.webp"
+        },
+        {
+            "id": "independence",
+            "name": "통일궁",
+            "description": "국가의 역사를 증언하는 특별 유적지.",
+            "image": "independence.webp"
+        },
+        {
+            "id": "postoffice",
+            "name": "중앙 우체국",
+            "description": "구스타브 에펠이 설계한 프랑스 건축물.",
+            "image": "postoffice.webp"
+        },
+        {
+            "id": "nguyenhue",
+            "name": "응우옌후에 보행자 거리",
+            "description": "분수와 광장이 있는 활기찬 중심가.",
+            "image": "nguyenhue.webp"
+        },
+        {
+            "id": "landmark81",
+            "name": "랜드마크 81",
+            "description": "베트남 최고층 빌딩, 360도 전망.",
+            "image": "landmark81.webp"
+        },
+        {
+            "id": "bitexco",
+            "name": "비텍스코 파이낸셜 타워",
+            "description": "사이공 스카이덱 전망대가 있는 현대적 상징.",
+            "image": "bitexco.webp"
+        },
+        {
+            "id": "opera",
+            "name": "시민 극장",
+            "description": "아름다운 프랑스 스타일 오페라 하우스.",
+            "image": "opera.webp"
+        },
+        {
+            "id": "bachdang",
+            "name": "바크당 부두",
+            "description": "사이공 강변의 역사적인 부두.",
+            "image": "bachdang.webp"
+        },
+        {
+            "id": "ngochoang",
+            "name": "옥황상제 사원",
+            "description": "고풍스럽고 신성한 중국 사원.",
+            "image": "ngochoang.webp"
+        }
+    ]
+}

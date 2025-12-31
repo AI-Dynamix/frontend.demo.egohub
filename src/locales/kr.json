@@ -1,0 +1,35 @@
+{
+    "common": {
+        "appName": "eGo",
+        "appDescription": "스마트 여행 도우미"
+    },
+    "header": {
+        "weather": "날씨",
+        "loading": "로딩중..."
+    },
+    "footer": {
+        "accessibility": "접근성",
+        "emergency": "긴급",
+        "more": "더보기"
+    },
+    "search": {
+        "placeholder": "장소, 서비스 검색...",
+        "dining": "식사",
+        "hotels": "호텔",
+        "shopping": "쇼핑",
+        "attractions": "관광명소"
+    },
+    "services": {
+        "transport": "교통 및 이동",
+        "events": "주변 이벤트",
+        "guide": "투어 가이드",
+        "medical": "의료 지원",
+        "card": "eSIM 및 eGo 카드",
+        "security": "보안 및 SOS"
+    },
+    "idle": {
+        "warning": "아직 사용 중이신가요?",
+        "autoReset": "{{seconds}}초 후 자동 종료",
+        "continueButton": "아직 사용 중입니다"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "common": {
+        "appName": "eGo",
+        "appDescription": "Smart Travel Assistant",
+        "back": "Back"
+    },
+    "support": {
+        "title": "AI Travel Assistant",
+        "greeting": "How can I help you?"
+    },
+    "header": {
+        "weather": "Weather",
+        "loading": "Loading..."
+    },
+    "footer": {
+        "accessibility": "Accessibility",
+        "emergency": "Emergency",
+        "more": "More"
+    },
+    "search": {
+        "placeholder": "Search places, services...",
+        "dining": "Dining",
+        "hotels": "Hotels",
+        "shopping": "Shopping",
+        "attractions": "Attractions"
+    },
+    "services": {
+        "transport": "Transport and Travel",
+        "events": "Nearby Events",
+        "guide": "Tour Guide",
+        "medical": "Medical Support",
+        "card": "eSIM and eGo Card",
+        "security": "Security and SOS"
+    },
+    "idle": {
+        "warning": "Are you still there?",
+        "autoReset": "Auto reset in {{seconds}}s",
+        "continueButton": "I'm still here"
+    }
+}

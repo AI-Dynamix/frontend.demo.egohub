@@ -1,0 +1,13 @@
+services:
+  zframe-aloai-frontend:
+    image: zframe-aloai-frontend
+    container_name: zframe-aloai-frontend
+    restart: always
+    #ports:
+    #  - "80"
+    networks:
+      - nginx-proxy_nw
+
+networks:
+  nginx-proxy_nw:
+    external: true

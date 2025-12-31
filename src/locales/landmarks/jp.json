@@ -1,0 +1,64 @@
+{
+    "landmarks": [
+        {
+            "id": "benthanh",
+            "name": "ベンタイン市場",
+            "description": "サイゴンの中心にある賑やかな歴史的市場。",
+            "image": "benthanh.webp"
+        },
+        {
+            "id": "notredame",
+            "name": "サイゴン大教会",
+            "description": "荘厳なフランス植民地時代の建築傑作。",
+            "image": "notredame.webp"
+        },
+        {
+            "id": "independence",
+            "name": "統一会堂",
+            "description": "国の歴史を物語る特別な国家遺産。",
+            "image": "independence.webp"
+        },
+        {
+            "id": "postoffice",
+            "name": "中央郵便局",
+            "description": "ギュスターヴ・エッフェル設計のフランス建築。",
+            "image": "postoffice.webp"
+        },
+        {
+            "id": "nguyenhue",
+            "name": "グエンフエ歩行者天国",
+            "description": "噴水とイベントが楽しめる活気ある広場。",
+            "image": "nguyenhue.webp"
+        },
+        {
+            "id": "landmark81",
+            "name": "ランドマーク81",
+            "description": "ベトナム最高層ビル、360度の眺望。",
+            "image": "landmark81.webp"
+        },
+        {
+            "id": "bitexco",
+            "name": "ビテクスコ・フィナンシャルタワー",
+            "description": "サイゴンスカイデッキを備えた現代的なシンボル。",
+            "image": "bitexco.webp"
+        },
+        {
+            "id": "opera",
+            "name": "市民劇場",
+            "description": "美しいフランス様式のオペラハウス。",
+            "image": "opera.webp"
+        },
+        {
+            "id": "bachdang",
+            "name": "バクダン埠頭",
+            "description": "サイゴン川沿いの歴史的な桟橋。",
+            "image": "bachdang.webp"
+        },
+        {
+            "id": "ngochoang",
+            "name": "玉皇殿",
+            "description": "古くて神聖な中国寺院。",
+            "image": "ngochoang.webp"
+        }
+    ]
+}

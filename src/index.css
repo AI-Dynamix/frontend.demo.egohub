@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* KIOSK GRID SYSTEM STANDARD (Total Height: 64 Units = 1920px) */
+  --k-unit: 30px;
+  /* 1 base unit = 30px */
+
+  /* Spacing */
+  --gap-inner: var(--k-unit);
+  /* Within same section: 1 base = 30px */
+  --gap-outer: calc(2 * var(--k-unit));
+  /* Between sections: 2 base = 60px */
+
+  /* Zone Heights (Total: 64 units) */
+  /* Header: 6 units, Gap: 2, Upper: 18, Gap: 2, Center: 24, Gap: 2, Bottom: 4, Gap: 2, Footer: 4 */
+  --h-header: calc(6 * var(--k-unit));
+  /* 180px */
+  --h-upper: calc(18 * var(--k-unit));
+  /* 540px - Expanded slider */
+  --h-matrix: calc(24 * var(--k-unit));
+  /* 720px - Reduced services */
+  --h-search: calc(4 * var(--k-unit));
+  /* 120px */
+  --h-footer: calc(4 * var(--k-unit));
+  /* 120px */
+
+  /* Search Bar Specifics */
+  --h-search-bar: calc(3 * var(--k-unit));
+  /* 90px */
+}
+
+@layer utilities {
+
+  /* Glass for general elements (darker, less blur) */
+  .glass {
+    @apply backdrop-blur-md border shadow-lg;
+    background: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  /* Glass for header/footer (original style - more blur, lighter) */
+  .glass-bar {
+    @apply backdrop-blur-2xl border-2 shadow-2xl;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-3xl border-2 shadow-2xl;
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .bento-card-safe-zone {
+    @apply relative overflow-hidden rounded-[2.5rem] transition-all duration-500 active:scale-95;
+  }
+
+  /* Kiosk Card Typography */
+  .kiosk-card-title {
+    @apply text-2xl font-bold mb-1 text-white;
+  }
+
+  .kiosk-card-subtitle {
+    @apply text-sm font-medium;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .kiosk-card-icon {
+    @apply w-16 h-16;
+  }
+}
+
+@keyframes flow {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-1%, -1%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes iconBounce {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-8px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-4px) rotate(5deg);
+  }
+}
+
+.animate-flow {
+  animation: flow 20s ease-in-out infinite;
+}
+
+@keyframes iconPulseAlternate {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 25px rgba(250, 204, 21, 0.6));
+    /* Yellow */
+    transform: translateY(0);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 35px rgba(5, 150, 105, 0.8));
+    /* Green */
+    transform: translateY(-8px);
+  }
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Primary Blue */
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Accent Red */
+    --accent: 0 84.2% 60.2%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14% 8%;
+    --foreground: 48 96% 89%;
+
+    --card: 20 14% 8%;
+    --card-foreground: 48 96% 89%;
+
+    --popover: 20 14% 8%;
+    --popover-foreground: 48 96% 89%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 0 72.2% 50.6%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Animated background effects */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes moveGradient {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes logoGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo-gradient-animate {
+  background: linear-gradient(90deg, #2563eb 0%, #2563eb 40%, #dc2626 60%, #2563eb 80%, #2563eb 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+  animation: logoGradient 3s linear infinite;
+}
+
+@keyframes pinkGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.4), 0 0 5px rgba(255, 105, 180, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(255, 182, 193, 0.8), 0 0 10px rgba(255, 105, 180, 0.4);
+  }
+}
+
+.animate-pink-glow {
+  animation: pinkGlow 3s ease-in-out infinite;
+}

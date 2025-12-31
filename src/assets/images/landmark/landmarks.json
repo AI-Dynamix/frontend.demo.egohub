@@ -1,0 +1,84 @@
+{
+    "landmarks": [
+        {
+            "id": 1,
+            "name": "Chợ Bến Thành",
+            "nameEn": "Ben Thanh Market",
+            "image": "benthanh.webp",
+            "description": "Biểu tượng lịch sử sôi động giữa lòng Sài Gòn, điểm đến mua sắm hàng đầu.",
+            "descriptionEn": "A vibrant historic symbol in the heart of Saigon, a top shopping destination."
+        },
+        {
+            "id": 2,
+            "name": "Nhà Thờ Đức Bà",
+            "nameEn": "Notre-Dame Cathedral",
+            "image": "notredame.webp",
+            "description": "Kiệt tác kiến trúc Gothic Pháp, biểu tượng tâm linh của thành phố.",
+            "descriptionEn": "A French Gothic masterpiece, the spiritual symbol of the city."
+        },
+        {
+            "id": 3,
+            "name": "Dinh Độc Lập",
+            "nameEn": "Independence Palace",
+            "image": "independence.webp",
+            "description": "Di tích quốc gia đặc biệt, chứng nhân lịch sử thống nhất đất nước.",
+            "descriptionEn": "A special national relic, witness to the country's reunification."
+        },
+        {
+            "id": 4,
+            "name": "Bưu Điện Thành Phố",
+            "nameEn": "Central Post Office",
+            "image": "postoffice.webp",
+            "description": "Công trình kiến trúc Pháp tuyệt đẹp, bưu điện hoạt động lâu đời nhất.",
+            "descriptionEn": "A beautiful French colonial building, the oldest operating post office."
+        },
+        {
+            "id": 5,
+            "name": "Phố Đi Bộ Nguyễn Huệ",
+            "nameEn": "Nguyen Hue Walking Street",
+            "image": "nguyenhue.webp",
+            "description": "Đại lộ sôi động với đài phun nước và tượng Bác Hồ.",
+            "descriptionEn": "A lively boulevard with fountains and Ho Chi Minh statue."
+        },
+        {
+            "id": 6,
+            "name": "Landmark 81",
+            "nameEn": "Landmark 81",
+            "image": "landmark81.webp",
+            "description": "Tòa nhà cao nhất Việt Nam với tầm nhìn 360 độ toàn thành phố.",
+            "descriptionEn": "Vietnam's tallest building with 360-degree city views."
+        },
+        {
+            "id": 7,
+            "name": "Bitexco Financial Tower",
+            "nameEn": "Bitexco Financial Tower",
+            "image": "bitexco.webp",
+            "description": "Biểu tượng kiến trúc hiện đại với Skydeck nổi tiếng.",
+            "descriptionEn": "An iconic modern architecture with the famous Skydeck."
+        },
+        {
+            "id": 8,
+            "name": "Nhà Hát Thành Phố",
+            "nameEn": "Municipal Theatre",
+            "image": "opera.webp",
+            "description": "Opera House lộng lẫy theo phong cách Pháp từ năm 1897.",
+            "descriptionEn": "A magnificent French-style Opera House since 1897."
+        },
+        {
+            "id": 9,
+            "name": "Bến Bạch Đằng",
+            "nameEn": "Bach Dang Wharf",
+            "image": "bachdang.webp",
+            "description": "Bến du thuyền sông Sài Gòn với view hoàng hôn tuyệt đẹp.",
+            "descriptionEn": "Saigon River cruise pier with stunning sunset views."
+        },
+        {
+            "id": 10,
+            "name": "Chùa Ngọc Hoàng",
+            "nameEn": "Jade Emperor Pagoda",
+            "image": "ngochoang.webp",
+            "description": "Ngôi chùa linh thiêng với kiến trúc Trung Hoa độc đáo.",
+            "descriptionEn": "A sacred temple with unique Chinese architecture."
+        }
+    ]
+}

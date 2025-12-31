@@ -1,0 +1,64 @@
+{
+    "landmarks": [
+        {
+            "id": "benthanh",
+            "name": "滨城市场",
+            "description": "西贡市中心的标志性繁华市场。",
+            "image": "benthanh.webp"
+        },
+        {
+            "id": "notredame",
+            "name": "圣母大教堂",
+            "description": "宏伟的法国殖民时期建筑地标。",
+            "image": "notredame.webp"
+        },
+        {
+            "id": "independence",
+            "name": "统一宫",
+            "description": "见证国家历史的历史宫殿。",
+            "image": "independence.webp"
+        },
+        {
+            "id": "postoffice",
+            "name": "中央邮局",
+            "description": "由古斯塔夫·埃菲尔设计的法式建筑。",
+            "image": "postoffice.webp"
+        },
+        {
+            "id": "nguyenhue",
+            "name": "阮惠步行街",
+            "description": "充满活力的步行广场，设有喷泉和活动。",
+            "image": "nguyenhue.webp"
+        },
+        {
+            "id": "landmark81",
+            "name": "地标81",
+            "description": "越南最高建筑，360度全景。",
+            "image": "landmark81.webp"
+        },
+        {
+            "id": "bitexco",
+            "name": "金融塔",
+            "description": "设有西贡天空甲板观景台的现代地标。",
+            "image": "bitexco.webp"
+        },
+        {
+            "id": "opera",
+            "name": "市剧院",
+            "description": "美丽的法式歌剧院。",
+            "image": "opera.webp"
+        },
+        {
+            "id": "bachdang",
+            "name": "白藤码头",
+            "description": "西贡河边的历史码头。",
+            "image": "bachdang.webp"
+        },
+        {
+            "id": "ngochoang",
+            "name": "玉皇殿",
+            "description": "古老而神圣的中国寺庙。",
+            "image": "ngochoang.webp"
+        }
+    ]
+}
