@@ -79,7 +79,7 @@ export default function LandmarkDetailScreen() {
                 </div>
 
                 {/* 2. CONTENT SCROLLABLE (Middle) */}
-                <div className="flex-1 overflow-y-auto px-8 py-4 flex flex-col gap-8 custom-scrollbar">
+                <div className="flex-1 overflow-y-auto px-8 py-4 flex flex-col gap-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
 
                     {/* Description Card */}
                     <div className="bg-white/5 p-6 rounded-3xl border border-white/10 shadow-lg">
@@ -140,8 +140,8 @@ export default function LandmarkDetailScreen() {
                                     key={idx}
                                     onClick={() => setSelectedPhoto(idx)}
                                     className={`transition-all rounded-full ${idx === selectedPhoto
-                                            ? 'w-8 h-2 bg-blue-400'
-                                            : 'w-2 h-2 bg-white/30 hover:bg-white/50'
+                                        ? 'w-8 h-2 bg-blue-400'
+                                        : 'w-2 h-2 bg-white/30 hover:bg-white/50'
                                         }`}
                                 />
                             ))}

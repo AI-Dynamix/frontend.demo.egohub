@@ -14,6 +14,11 @@ const VR360Page = lazy(() => import('./pages/VR360/VR360Page'))
 const PassportScanPage = lazy(() => import('./pages/Passport/PassportScanPage'))
 const LandmarkDetailScreen = lazy(() => import('./pages/Features/LandmarkDetailScreen'))
 const SearchPage = lazy(() => import('./pages/Search/SearchPage'))
+const RestaurantSearch = lazy(() => import('./pages/Search/categories/RestaurantSearch'))
+const HotelSearch = lazy(() => import('./pages/Search/categories/HotelSearch'))
+const TicketSearch = lazy(() => import('./pages/Search/categories/TicketSearch'))
+const TransportSearch = lazy(() => import('./pages/Search/categories/TransportSearch'))
+const ShoppingSearch = lazy(() => import('./pages/Search/categories/ShoppingSearch'))
 const SOSPage = lazy(() => import('./pages/SOS/SOSPage'))
 
 // Context Type for Outlet
@@ -38,6 +43,12 @@ const router = createBrowserRouter(
         <Route path="/passport" element={<PassportScanPage />} />
         <Route path="/landmark/:id" element={<LandmarkDetailScreen />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/search/dining" element={<RestaurantSearch />} />
+        <Route path="/search/hotels" element={<HotelSearch />} />
+        <Route path="/search/tickets" element={<TicketSearch />} />
+        <Route path="/search/tickets" element={<TicketSearch />} />
+        <Route path="/search/transport" element={<TransportSearch />} />
+        <Route path="/search/shopping" element={<ShoppingSearch />} />
         <Route path="/sos" element={<SOSPage />} />
         <Route path="/engineering" element={
           <ProtectedRoute>

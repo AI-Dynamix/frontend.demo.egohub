@@ -89,7 +89,16 @@ export default function SearchPage() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: index * 0.05 }}
-                                    onClick={() => setSelectedCategory(selectedCategory === cat.id ? null : cat.id)}
+                                    onClick={() => {
+                                        if (cat.id === 'food') navigate('/search/dining')
+                                        else if (cat.id === 'cafe') navigate('/search/dining?category=coffee')
+                                        else if (cat.id === 'hotel') navigate('/search/hotels')
+                                        else if (cat.id === 'travel') navigate('/search/tickets')
+                                        else if (cat.id === 'museum') navigate('/search/tickets?category=museum')
+                                        else if (cat.id === 'shopping') navigate('/search/shopping')
+                                        else if (cat.id === 'transport') navigate('/search/transport')
+                                        else setSelectedCategory(selectedCategory === cat.id ? null : cat.id)
+                                    }}
                                     className={`aspect-square rounded-3xl flex flex-col items-center justify-center gap-4 transition-all border-4 ${selectedCategory === cat.id
                                         ? 'border-blue-500 shadow-xl scale-105 bg-blue-500/10'
                                         : 'k-glass border-transparent'
