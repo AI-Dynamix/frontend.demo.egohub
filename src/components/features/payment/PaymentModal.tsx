@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { QrCode, CreditCard, CheckCircle, Smartphone, EnvelopeSimple, DownloadSimple, X } from '@phosphor-icons/react';
+import { QrCode, CreditCard, CheckCircle, DeviceMobile, EnvelopeSimple, DownloadSimple, X } from '@phosphor-icons/react';
 import KioskButton from '../../kiosk-ui/KioskButton';
 
 type PaymentMethod = 'qr' | 'card';
@@ -177,7 +177,7 @@ export default function PaymentModal({ isOpen, onClose, totalAmount, onPaymentCo
                                             <span className="text-white font-bold">Chụp mã đơn</span>
                                         </button>
                                         <button onClick={() => window.open('https://ego.app')} className="flex flex-col items-center justify-center gap-3 p-6 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
-                                            <Smartphone size={40} className="text-blue-400" />
+                                            <DeviceMobile size={40} className="text-blue-400" />
                                             <span className="text-white font-bold">Tải Ego App</span>
                                         </button>
                                     </div>

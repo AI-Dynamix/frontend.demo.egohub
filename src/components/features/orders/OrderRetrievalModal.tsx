@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { UserFocus, Keypad, X, Receipt, Clock } from '@phosphor-icons/react';
-import { OrderService, Order } from '../../../services/OrderService';
+import { UserFocus, Calculator, X, Receipt, Clock } from '@phosphor-icons/react';
+import { OrderService, type Order } from '../../../services/OrderService';
 import KioskButton from '../../kiosk-ui/KioskButton';
 
 interface OrderRetrievalModalProps {
@@ -123,7 +123,7 @@ export default function OrderRetrievalModal({ isOpen, onClose }: OrderRetrievalM
                             >
                                 <div className="flex flex-col items-center gap-4">
                                     <div className="p-6 rounded-full bg-purple-500/20 text-purple-400 mb-2">
-                                        <Keypad size={48} weight="fill" />
+                                        <Calculator size={48} weight="fill" />
                                     </div>
                                     <h2 className="text-3xl font-bold text-white">Nhập mã PIN xác nhận</h2>
                                     <p className="text-white/50">Nhập mã PIN 4 số của bạn</p>
